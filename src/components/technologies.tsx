@@ -8,14 +8,12 @@ interface TechnologiesComponentProps {
 export default function TechnologiesComponent({className}: Readonly<TechnologiesComponentProps>) {
   return (
     <div id={"technologies"} className={className}>
-      <h2 className={"pb-5"}>Technologies</h2>
-      <div className={"grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 gap-small-gap"}>
-        {technologies.map((technologies) => (
+      <h2 className={"pb-10 text-4xl"}>Technologies</h2>
+      <div className={"grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-small-gap"}>
+        {technologies.map((technology) => (
           <TechnologyCard
-            key={technologies.id}
-            title={technologies.title}
-            src={technologies.src}
-            alt={technologies.alt}
+            key={technology.id}
+            technology={technology}
           />
         ))}
       </div>

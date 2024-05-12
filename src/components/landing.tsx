@@ -4,13 +4,23 @@ interface LandingComponentProps {
 
 export default function LandingComponent({className = ""}: Readonly<LandingComponentProps>) {
   return (
-    <div className={"h-landing -mb-10 flex flex-col justify-center gap-10 " + className}>
-      <h1><span className={"text-blue-500"}>Hello, I&apos;m Noa,</span><br/> Web & mobile developer</h1>
-      <p className={"text-xs"}>
-        I&apos;m passionate about technology and I love to create web and mobile applications. I&apos;m always looking
-        for new
-        challenges and I&apos;m constantly learning new technologies.
+    <div id={"landing"} className={"h-landing -mb-10 flex flex-col justify-center gap-10 " + className}>
+      <h1 className={"text-4xl"}>
+        <span className={"text-blue-500"}>Bonjour, je suis Noa,</span><br/>
+        Développeur web & mobile
+      </h1>
+      <p className={"text-2xl"}>
+        Je suis passionné par la technologie et j&apos;aime créer des applications web et mobiles. Toujours à la
+        recherche de nouveaux défis, j&apos;apprends constamment de nouvelles technologies.
       </p>
+      <div>
+        <a
+          href={"/CAVALCANTE-Noa_CV.pdf"}
+          download={"CAVALCANTE-Noa_CV.pdf"}
+          className={"bg-blue-500 text-2xl text-white p-4 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition-colors"}>
+          Download my CV
+        </a>
+      </div>
     </div>
   )
 }

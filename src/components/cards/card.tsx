@@ -3,10 +3,7 @@ interface CardProps {
   className?: string;
 }
 
-export default function Card({
-                               children,
-                               className = "",
-                             }: Readonly<CardProps>) {
+export default function Card({children, className = ""}: Readonly<CardProps>) {
   return (
     <div
       className={

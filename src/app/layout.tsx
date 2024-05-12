@@ -14,7 +14,7 @@ export default function RootLayout({children}: Readonly<{
     <html lang="fr" className={"font-mono scroll-smooth"}>
     <body>
     <Header/>
-    <main className={"px-4 sm:px-12 md:px-48"}>
+    <main className={"px-8 md:px-24 xl:px-48 2xl:px-96"}>
       {children}
     </main>
     <Footer/>

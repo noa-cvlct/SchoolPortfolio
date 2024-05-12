@@ -8,7 +8,7 @@ interface ProjectsComponentProps {
 export default function ProjectsComponent({className}: Readonly<ProjectsComponentProps>) {
   return (
     <div id={"projects"} className={className}>
-      <h2 className={"pb-5"}>Projets</h2>
+      <h2 className={"pb-10 text-4xl"}>Projets</h2>
       <div className={"grid grid-cols-1 sm:grid-cols-2 gap-gap"}>
         {projects.map((project) => (
           <ProjectCard
