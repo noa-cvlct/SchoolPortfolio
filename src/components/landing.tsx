@@ -18,7 +18,7 @@ export default function LandingComponent({className = ""}: Readonly<LandingCompo
           href={"/CAVALCANTE-Noa_CV.pdf"}
           download={"CAVALCANTE-Noa_CV.pdf"}
           className={"bg-blue-500 text-2xl text-white p-4 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50 transition-colors"}>
-          Download my CV
+          Télécharger mon CV
         </a>
       </div>
     </div>
